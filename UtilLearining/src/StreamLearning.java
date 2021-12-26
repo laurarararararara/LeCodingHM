@@ -31,5 +31,7 @@ public class StreamLearning {
             return string.isEmpty();
         }).count();
         System.out.println(count);
+
+
     }
 }

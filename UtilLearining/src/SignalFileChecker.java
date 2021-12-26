@@ -138,7 +138,6 @@ public abstract class SignalFileChecker {
         } catch (IOException var8) {
             var8.printStackTrace();
         }
-
         return errorList.size() != 0;
     }
 
@@ -170,7 +169,10 @@ public abstract class SignalFileChecker {
     }
 
     public static boolean isSpecialChar(char c) {
-        return c == '+' || c == '<' || c == '>' || c == '=' || c == '{' || c == '}' || c == '[' || c == ']' || c == '%' || c == '&' || c == '|' || c == '@' || c == '$' || c == 8594 || c == ':' || c == '#' || c == '~' || c == 9584 || c == 9581 || c == '^' || c == '?' || c == 9752 || c == 10084 || c == 8593 || c == 8595 || c == 0 || c == '*' || c == '-' || c == 'x' || c == '_' || c == 160 || c == 154 || c == 9819 || c == 9989;
+        return c == '+' || c == '<' || c == '>' || c == '=' || c == '{' || c == '}' || c == '[' || c == ']'
+                || c == '%' || c == '&' || c == '|' || c == '@' || c == '$' || c == 8594 || c == ':' || c == '#'
+                || c == '~' || c == 9584 || c == 9581 || c == '^' || c == '?' || c == 9752 || c == 10084 || c == 8593
+                || c == 8595 || c == 0 || c == '*' || c == '-' || c == 'x' || c == '_' || c == 160 || c == 154 || c == 9819 || c == 9989;
     }
 
     public static boolean containsEmoji(String source) {
